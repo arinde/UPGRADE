@@ -14,14 +14,12 @@ export default function AboutUss () {
                 <div className="flex flex-col flex-sm-col justify-center md:items-start items-center md:mt-0 mt-3">
                     <div className="flex flex-sm-col flex-col md:items-start items-center text-white">
                         <p 
-                        className="block items-center bg-green-700 border-1  rounded-3xl md:w-[25%]  py-1
+                        className="block items-center bg-green-700 border-1  rounded-3xl md:w-[25%] md:py-1 py-2 w-[30%]
                         text-center text-[10px] leading-tight tracking-wide">🔥TRUSTWORTHINESS</p>
-                        <p className=" md:text-4xl text-3xl font-bold tracking-wide">WE VALUE YOUR TRUST</p>
+                        <p className=" md:text-4xl text-3xl font-bold tracking-wide md:mt-0 mt-2">WE VALUE YOUR TRUST</p>
                         <p className='md:text-4xl text-3xl font-bold tracking-wide'>AND SECURITY</p>
-                        <p className="text-left my-2 text-[12px] text-gray-300 font-medium tracking-wide">Our Mission Is To Make Finance More Accessible, 
-                            Transparent and Secure
-                        </p>
-                        <p className='text-left -mt-2 text-[12px] text-gray-300 font-medium tracking-wide'>For Everyone With Cutting.</p>
+                        <p className="md:text-left text-center my-2 text-[12px] text-gray-300 font-medium tracking-wide text-wrap">Our Mission Is To Make Finance More Accessible, 
+                            Transparent and Secure For Everyone With Cutting.</p>
                     </div>
                     
                     <div className="flex flex-row flex-sm-row py-3">

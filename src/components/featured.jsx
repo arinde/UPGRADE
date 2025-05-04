@@ -21,7 +21,7 @@ export default function Featured(){
                         size="medium"
                         className="py-1 text-blue-950 ml-6"
                         >Get Started</Button>
-                        <button><img src={Rightimg} alt="" className="-ml-4 w-30 "/></button>
+                        <img src={Rightimg} alt="" className="-ml-4 w-30 "/>
                     </div>
                 </div>
                 <div className="flex gap-3 md:mt-0 mt-16 mb-10">

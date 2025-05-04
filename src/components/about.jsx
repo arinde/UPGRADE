@@ -12,7 +12,7 @@ export default function About (){
                         <span 
                         className="border bg-gray-400 rounded-3xl w-40 py-1
                         text-center text-[10px] leading-tight tracking-wide">🔥100% TRUSTED PLATFORM</span><br/>
-                        <span className="inline-block  text-6xl font-bold tracking-wide">FINANCE WITH <br/> SECURITY AND <br/> <span className="inline-block text-yellow-300">FLEXIBILITY</span></span>
+                        <span className="inline-block  md:text-6xl text-4xl font-bold tracking-wide">FINANCE WITH <br/> SECURITY AND <br/> <span className="inline-block text-yellow-300">FLEXIBILITY</span></span>
                         <p className="inline-block my-2 text-sm tracking-wide">No-Fee Checking Account With Cash Back Rewards. <br/> 
                             Enjoy Fee-Free Banking And Earn Cash Back On Your <br/> Everyday Purchases.
                         </p>
