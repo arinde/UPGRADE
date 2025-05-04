@@ -1,5 +1,5 @@
 import VisaCard from '../images/VisaCard.png'
-import CreditCardInfo from '../images/CreditCardinfo.png'
+import CreditCardInfo from '../images/CreditCardInfo.png'
 import Button from './button'
 import Rightimg from '../images/Right Button.png'
 
