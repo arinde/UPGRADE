@@ -13,11 +13,11 @@ export default function AboutUss () {
                 </div>
                 <div className="flex flex-col flex-sm-col justify-center md:items-start items-center md:mt-0 mt-3">
                     <div className="flex flex-sm-col flex-col md:items-start items-center text-white">
-                        <span 
-                        className="block items-center bg-green-700 border-0 rounded-3xl w-[25%] py-1
-                        text-center text-[10px] leading-tight tracking-wide">🔥TRUSTWORTHINESS</span><br/>
-                        <span className=" text-4xl font-bold tracking-wide">WE VALUE YOUR TRUST</span>
-                        <span className='text-4xl font-bold tracking-wide'>AND SECURITY</span>
+                        <p 
+                        className="block items-center bg-green-700 border-1  rounded-3xl md:w-[25%]  py-1
+                        text-center text-[10px] leading-tight tracking-wide">🔥TRUSTWORTHINESS</p>
+                        <p className=" md:text-4xl text-3xl font-bold tracking-wide">WE VALUE YOUR TRUST</p>
+                        <p className='md:text-4xl text-3xl font-bold tracking-wide'>AND SECURITY</p>
                         <p className="text-left my-2 text-[12px] text-gray-300 font-medium tracking-wide">Our Mission Is To Make Finance More Accessible, 
                             Transparent and Secure
                         </p>

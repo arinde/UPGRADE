@@ -30,7 +30,7 @@ export default function Footer () {
                         </div>
                     </Button>
                 </div>
-                <div className="flex text-gray-900 text-[12px] font-semibold gap-3 md:gap-12 mt-4">
+                <div className="flex text-gray-900 text-[12px] font-semibold gap-1 md:gap-12 mt-4">
                     <span>Personal Loan</span>
                     <span>One Card</span>
                     <span>Savings</span>
@@ -46,7 +46,7 @@ export default function Footer () {
                     <img src="" alt="" />
                 </div>*/}
                 <span className="font-bold text-gray-900 text-[12px] mt-3">Send Your Feedback:<span className="text-gray-900 text-[12px] font-semibold"> arindevictor8@gmail.com</span></span>
-                <div className="flex text-gray-900 text-[12px] font-semibold md:gap-3 gap-1 mt-3">
+                <div className="flex text-gray-900 text-[12px] font-semibold md:gap-3 gap-0 mt-3">
                     <span>Privacy Policy</span>
                     <span>|</span>
                     <span>Terms & Condition</span>
@@ -57,7 +57,7 @@ export default function Footer () {
                     <span>|</span>
                     <span>Data Policy</span>
                 </div>
-                <p className="m-3 text-gray-900 text-[13px] tracking-wide font-bold">&copy; {new Date().getFullYear()} Arinde Victor. This design belongs to Deisgn Monks</p>
+                <p className="m-3 text-gray-900 md:text-[13px] text-[11px] tracking-wide font-bold">&copy; {new Date().getFullYear()} Arinde Victor. This design belongs to Deisgn Monks</p>
 
             </div>
         </section>
