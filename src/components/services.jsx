@@ -37,8 +37,8 @@ export default function Services (){
                         </div>
                         <div className="flex flex-col justify-center">
                             <motion.img
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ duration: 0.3 }}
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{ duration: 2, repeat: Infinity }}
                             src={Internet} alt="" className="w-7" />
                             <h2 className="text-black font-bold text-3xl tracking-wider text-wrap">Transfers Across The Globe Are Free</h2>
                         </div>
@@ -57,7 +57,10 @@ export default function Services (){
                             Tailored To Meet Your Needs. Our Services Include
                             High-Yield Savings Accounts</p>
                         <div className="flex justify-center">
-                            <img src={Tom} alt="" className="w-60 md:ml-12 mt-5" />
+                            <motion.img 
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                            src={Tom} alt="" className="w-60 md:ml-12 mt-5" />
                         </div>
                     </div>
                     <div className="bg-blue-950 text-white rounded-3xl w-full md:w-[30%] p-4 flex flex-col justify-center items-start md:mt-0 mt-3">
@@ -68,7 +71,10 @@ export default function Services (){
                             Personalized. Our Services Include High-Yield Savings.
                         </p>
                         <div className="flex justify-center">
-                            <img src={WelcomeTom} alt="" className="w-50 mt-12 md:ml-24" />
+                            <motion.img 
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                            src={WelcomeTom} alt="" className="w-50 mt-12 md:ml-24" />
                         </div>
                     </div>
                 </motion.div>

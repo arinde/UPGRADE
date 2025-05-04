@@ -24,7 +24,7 @@ export default function Featured(){
                      whileHover={{ scale: 1.05, backgroundColor: "", color: "white" }}
                      whileTap={{ scale: 0.95 }}
                      transition={{ type: 'spring', stiffness: 300 }}
-                    className="flex flex-row flex-sm-row py-3 -ml-5">
+                    className="flex flex-row flex-sm-row py-4 md:py-3 -ml-5">
                         <Button
                         variant="outline"
                         size="medium"

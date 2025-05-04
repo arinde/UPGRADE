@@ -21,7 +21,7 @@ export default function AboutUss () {
                     <motion.img 
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
-                    src={VisaCard} alt="" className="w-60 h-40 md:mt-44 mt-56 -ml-24" />
+                    src={VisaCard} alt="" className="w-60 h-40 md:mt-44 mt-44 -ml-24" />
                 </div>
                 <div className="flex flex-col flex-sm-col justify-center md:items-start items-center md:mt-0 mt-3">
                     <div className="flex flex-sm-col flex-col md:items-start items-center text-white">

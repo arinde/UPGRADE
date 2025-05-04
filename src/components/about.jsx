@@ -10,7 +10,10 @@ export default function About (){
             <div className="flex flex-col flex-md-row items-center justify-evenly mt-16 py-10">
                 <div className="flex flex-col flex-sm-col md:justify-evenly justify-center items-center">
                     <div className="flex flex-sm-col flex-col text-white items-center w-full md:text-left text-center">
-                        <span 
+                        <motion.span
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }} 
                         className="border bg-gray-400 rounded-3xl w-40 py-1
                         text-center text-[10px] leading-tight tracking-wide">🔥100% TRUSTED PLATFORM</span><br/>
                         <motion.span 
@@ -18,7 +21,11 @@ export default function About (){
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         className="inline-block  md:text-6xl text-4xl font-bold tracking-wide">FINANCE WITH <br/> SECURITY AND <br/> <span className="inline-block text-yellow-300">FLEXIBILITY</span></motion.span>
-                        <p className="inline-block my-2 text-sm tracking-wide">No-Fee Checking Account With Cash Back Rewards. <br/> 
+                        <motion.p 
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        className="inline-block my-2 text-sm tracking-wide">No-Fee Checking Account With Cash Back Rewards. <br/> 
                             Enjoy Fee-Free Banking And Earn Cash Back On Your <br/> Everyday Purchases.
                         </p>
                     </div>
