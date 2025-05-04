@@ -2,7 +2,7 @@ import Spherule from '../images/spherule.png'
 import Samsung from '../images/Samsung.png'
 import Visa from '../images/visa.png'
 import Amazon from '../images/amazon.png'
-import Paypal from '../images/paypal.png'
+import Paypal from '../images/Paypal.png'
 import Alipay from '../images/alipay.png'
 
 export default function Tagline() {

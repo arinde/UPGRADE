@@ -1,5 +1,5 @@
 import Button from "./button";
-import logo from '../images/logo.png'
+import logo from '../images/Logo.png'
 import Google from '../images/Google Play.png'
 import Apple from '../images/Apple.png'
 

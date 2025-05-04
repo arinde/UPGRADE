@@ -1,5 +1,4 @@
-import Button from "./button";
-import Rightimg from '../images/Right Button.svg'
+
 import Star from '../images/star.png'
 
 
