@@ -1,0 +1,16 @@
+{/*<section className="">
+            <div className="flex justify-center items-center">
+                <span className='border bg-gray-300 rounded-xl font-medium w-54 py-1 px-2 text-center text-[10px] tracking-widest'>🔥 TESTIMONIAL</span>
+                <h2 className="text-center">GET TO KNOW OUR CLIENTS</h2>*/}
+
+                {/* <div className="">
+                    <Button
+                    variant="outline"
+                    size="medium"
+                    className="py-10 px-10"
+                    >View more</Button>
+                    <img src={Rightimg} alt="" className="-ml-5 w-10" />
+                </div>
+            </div>
+            
+        </section>*/}
