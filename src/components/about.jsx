@@ -15,7 +15,7 @@ export default function About (){
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }} 
                         className="border bg-gray-400 rounded-3xl w-40 py-1
-                        text-center text-[10px] leading-tight tracking-wide">🔥100% TRUSTED PLATFORM</span><br/>
+                        text-center text-[10px] leading-tight tracking-wide">🔥100% TRUSTED PLATFORM</motion.span><br/>
                         <motion.span 
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export default function About (){
                         transition={{ duration: 1 }}
                         className="inline-block my-2 text-sm tracking-wide">No-Fee Checking Account With Cash Back Rewards. <br/> 
                             Enjoy Fee-Free Banking And Earn Cash Back On Your <br/> Everyday Purchases.
-                        </p>
+                        </motion.p>
                     </div>
                     
                     <motion.div 
