@@ -2,11 +2,17 @@ import Button from "./button";
 import logo from '../images/Logo.png'
 import Google from '../images/Google Play.png'
 import Apple from '../images/Apple.png'
+import { motion } from "framer-motion";
 
 export default function Footer () {
     return(
         <section>
-            <div className="flex flex-col justify-center items-center">
+            <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="flex flex-col justify-center items-center">
                 <img src={logo} alt="" className="w-40" />
                 <div className="flex gap-3 mt-1">
                     <Button
@@ -59,7 +65,7 @@ export default function Footer () {
                 </div>
                 <p className="m-3 text-gray-900 md:text-[13px] text-[11px] tracking-wide font-bold">&copy; {new Date().getFullYear()} Arinde Victor. This design belongs to Deisgn Monks</p>
 
-            </div>
+            </motion.div>
         </section>
 
     )

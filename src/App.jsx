@@ -17,6 +17,7 @@ import Rightimg from './images/Right Button.svg'
 import Footer from './components/footer.jsx'
 import Navbar from './components/nav.jsx'
 import Tagline from './components/tagline.jsx'
+import { motion } from 'framer-motion'
 
 export default function App(){
   return (
@@ -28,7 +29,12 @@ export default function App(){
       <Featured />
       <AboutUss />
       <Services />
-      <section className='py-10 px-4'>
+      <motion.section 
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className='py-10 px-4'>
         <div className="flex flex-col justify-center items-center">
             <span className='border bg-gray-300 rounded-xl font-medium w-54 py-1 px-2 text-center text-[10px] tracking-widest'>🔥 TESTIMONIAL</span>
             <h2 className="text-center font-bold tracking-wide text-2xl sm:text-3xl mt-2">GET TO KNOW OUR CLIENTS</h2>
@@ -61,15 +67,19 @@ export default function App(){
                         
                 ))}
         </Swiper>
-        <div className="flex justify-center items-center mt-5">
+        <motion.div 
+         whileHover={{ scale: 1.05, backgroundColor: "", color: "black" }}
+         whileTap={{ scale: 0.95 }}
+         transition={{ type: 'spring', stiffness: 300 }}
+        className="flex justify-center items-center mt-5">
             <Button
             variant="outline"
             size="medium"
             className="py-10 px-10"
             >View more</Button>
             <img src={Rightimg} alt="" className="-ml-5 w-10" />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
       <Footer />
     </>
   )

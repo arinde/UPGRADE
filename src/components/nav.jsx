@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from '../images/Logo.png'
 import { Menu, X } from "lucide-react";
 import Button from "./button";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,20 +22,39 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-6 text-green-950 cursor-pointer">
-                <li className="hover:text-green-700 border-">Personal Loan</li>
-                <li className="hover:text-green-700">One Card</li>
-                <li className="hover:text-green-700">Savings</li>
-                <li className="hover:text-green-700">Checking</li>
-                <li className="hover:text-green-700">Help</li>
+                <motion.li 
+                whileHover={{ scale: 1.1, color: "green" }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-green-700 border-">Personal Loan</motion.li>
+                <motion.li 
+                whileHover={{ scale: 1.1, color: "green" }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-green-700">One Card</motion.li>
+                <motion.li 
+                whileHover={{ scale: 1.1, color: "green" }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-green-700">Savings</motion.li>
+                <motion.li 
+                whileHover={{ scale: 1.1, color: "green" }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-green-700">Checking</motion.li>
+                <motion.li 
+                whileHover={{ scale: 1.1, color: "green" }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-green-700">Help</motion.li>
             </ul>
 
-            <div className="hidden md:flex">
+            <motion.div 
+            whileHover={{ scale: 1.05, backgroundColor: "", color: "white" }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            className="hidden md:flex">
                 <Button
                 variant='outline'
                 size="medium"
                 className="py-2 px-6 text-green-950 rounded-xl border-green-500"
                 >Sign In</Button>
-            </div>
+            </motion.div>
         </div>
 
       {/* Mobile Menu */}

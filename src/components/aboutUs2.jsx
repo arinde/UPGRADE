@@ -2,14 +2,26 @@ import VisaCard from '../images/VisaCard.png'
 import CreditCardInfo from '../images/CreditCardInfo.png'
 import Button from './button'
 import Rightimg from '../images/Right Button.png'
+import { motion } from 'framer-motion'
 
 export default function AboutUss () {
     return(
         <section className="bg-gradient-to-tr from-blue-950 to-blue-950 via-green-600 w-full">
-            <div className="flex flex-col flex-sm-row justify-evenly align-center py-5">
+            <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col flex-sm-row justify-evenly align-center py-5">
                 <div className='flex flex-md-col justify-center items-center'>
-                    <img src={CreditCardInfo} alt="" className="w-50" />
-                    <img src={VisaCard} alt="" className="w-60 h-40 mt-52 -ml-24" />
+                    <motion.img
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    src={CreditCardInfo} alt="" className="w-50" />
+                    <motion.img 
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    src={VisaCard} alt="" className="w-60 h-40 md:mt-44 mt-56 -ml-24" />
                 </div>
                 <div className="flex flex-col flex-sm-col justify-center md:items-start items-center md:mt-0 mt-3">
                     <div className="flex flex-sm-col flex-col md:items-start items-center text-white">
@@ -22,16 +34,20 @@ export default function AboutUss () {
                             Transparent and Secure For Everyone With Cutting.</p>
                     </div>
                     
-                    <div className="flex flex-row flex-sm-row py-3">
+                    <motion.div 
+                     whileHover={{ scale: 1.05, backgroundColor: "", color: "white" }}
+                     whileTap={{ scale: 0.95 }}
+                     transition={{ type: 'spring', stiffness: 300 }}
+                    className="flex flex-row flex-sm-row py-3">
                         <Button
                         variant="success"
                         size="medium"
                         className="py-1 text-blue-950"
                         >Get Started</Button>
                         <img src={Rightimg} alt="" className="-ml-4 w-10"/>
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }
