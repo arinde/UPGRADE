@@ -35,9 +35,9 @@ export default function About (){
                     whileHover={{ scale: 1.05, backgroundColor: "", color: "white" }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ type: 'spring', stiffness: 300 }}
-                    className="flex flex-row flex-sm-row py-3">
+                    className="">
 
-                        <NavLink to="/SignUp">
+                        <NavLink to="/SignUp" className="flex flex-row flex-sm-row py-3">
                             <Button
                             variant="success"
                             size="medium"

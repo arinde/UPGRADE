@@ -9,14 +9,16 @@ import { getDatabase } from "firebase/database";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDz1NDQPSOUPQYkpw9RavtfACrYUtYyXrk",
-  authDomain: "upgradeapp-d2557.firebaseapp.com",
-  projectId: "upgradeapp-d2557",
-  storageBucket: "upgradeapp-d2557.firebasestorage.app",
-  messagingSenderId: "837431416130",
-  appId: "1:837431416130:web:4005600eaf37d8b52164db",
-  measurementId: "G-CGXED30R1C",
-  databaseURL: "https://upgradeapp-d2557-default-rtdb.firebaseio.com/"
+  
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_DATABASE_URL,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID,
+
 };
 
 
