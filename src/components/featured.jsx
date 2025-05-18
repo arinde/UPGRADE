@@ -1,5 +1,5 @@
 import Button from "./button"
-import Rightimg from '../images/Right Button.svg'
+import Rightimg from '../images/RightButton.svg'
 import FeaturedImg from '../images/featured1.png'
 import FeaturedImg2 from '../images/featured2.png'
 import { motion } from "framer-motion"

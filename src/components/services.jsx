@@ -9,7 +9,7 @@ import WelcomeTom from '../images/welcome-tom.png'
 import { motion } from "framer-motion";
 import Expenses from '../images/Expenses.png'
 import Dollar from '../images/dollar.png'
-import Rightimg from '../images/Right Button.svg'
+import Rightimg from '../images/RightButton.svg'
 
 export default function Services (){
     return(

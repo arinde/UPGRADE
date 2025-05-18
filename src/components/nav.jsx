@@ -3,6 +3,7 @@ import logo from '../images/Logo.png'
 import { Menu, X } from "lucide-react";
 import Button from "./button";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,9 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-tr from-lime-300 to-lime-100 via-green-600pt-7 py-3  shadow-md gap-x fixed top-0 z-50 w-full">
       <div className="flex px-4 md:px-0 justify-between md:justify-evenly items-center">
-            <div className="">
+            <NavLink to="/" className="">
                 <img src={logo} alt='logo' className="w-40" />
-            </div>
+            </NavLink>
             {/* Hamburger Icon */}
             <div className="md:hidden">
                 <button onClick={() => setIsOpen(!isOpen)}>
@@ -49,11 +50,14 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 300 }}
             className="hidden md:flex">
+              <NavLink to="/signin">
                 <Button
                 variant='outline'
                 size="medium"
                 className="py-2 px-6 text-green-950 rounded-xl border-green-500"
                 >Sign In</Button>
+              </NavLink>
+                
             </motion.div>
         </div>
 
@@ -67,12 +71,16 @@ const Navbar = () => {
                 <li className="hover:text-gray-200" onClick={() => setIsOpen(false)}>Checking</li>
                 <li className="hover:text-gray-200" onClick={() => setIsOpen(false)}>Help</li>
             </ul>
-            <Button
-            variant='outline'
-            size="medium"
-            className="py-2 px-6 rounded-xl border-green-900 mt-3"
-            onClick={() => setIsOpen(false)}
-            >Sign In</Button>
+            <NavLink to="/Signin">
+              <Button
+                variant="outline"
+                size="medium"
+                className="py-2 px-6 rounded-xl border-green-900 mt-3"
+                onClick={() => setIsOpen(false)}
+              >
+                Sign In
+              </Button>
+            </NavLink>
         </div>
         
         

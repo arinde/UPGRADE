@@ -4,10 +4,7 @@ import Star from '../images/star.png'
 
 export default function Testimonial (props) {
     console.log(props.index)
-    return(
-        
-
-                
+    return(     
                     <div className="flex justify-center items-center mt-5">
                         <div className={`px-4 py-4  rounded-2xl mx-4 h-72 w-64 ${props.index === 2 ? "bg-[#004852]": "bg-gray-200"} `}>
                             <img src={props.quote} alt="" />
