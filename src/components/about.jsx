@@ -48,6 +48,8 @@ export default function About (){
                         
                     </motion.div>
                 </div>
+
+                {/*helloooooo*/}
                 <div>
                     <motion.img 
                     animate={{ y: [0, -10, 0] }}
