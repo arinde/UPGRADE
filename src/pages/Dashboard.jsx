@@ -24,15 +24,17 @@ export default function Dashboard() {
   }, []);
 
   const transactions = [
-    { id: 1, name: "Grocery Store", amount: "-$25.00", date: "May 17" },
-    { id: 2, name: "Salary", amount: "+$2,000.00", date: "May 15" },
-    { id: 3, name: "Electric Bill", amount: "-$75.00", date: "May 13" },
+    { id: 1, name: "Grocery Store", amount: "-$25.00", date: "May 30" },
+    { id: 2, name: "Salary", amount: "+$2,000.00", date: "May 28" },
+    { id: 3, name: "Electric Bill", amount: "-$75.00", date: "May 28" },
+    { id: 4, name: "Gas bill", amount: "-$85.00", date: "May 27" },
   ];
 
   const activities = [
     { id: 1, action: "Signed in", time: "5 minutes ago" },
     { id: 2, action: "Viewed dashboard", time: "4 minutes ago" },
     { id: 3, action: "Checked transactions", time: "2 minutes ago" },
+    { id: 4, action: "signed Out", time: "1 minutes ago" },
   ];
 
   return (
